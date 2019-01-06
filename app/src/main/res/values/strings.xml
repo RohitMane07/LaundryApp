@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">LApp</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="wash_fold">Wash and Fold</string>
+    <string name="positive_button">OK</string>
+
+    <string name="note">Note : Charges will be applied as per the fabric and receipt will be given at the time of pickup</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="term1">1. collect your clothes within 15 days</string>
+    <string name="term2">2. The company will not be responsible for old or new clothes torn during the process</string>
+    <string name="term3">3. Quality of texture deterioration of fabric color trimings buttons and stains etc. entierly at owners risk</string>
+    <string name="term4">4. The company will not be responsible for clothes if delivery is not taken within one month</string>
+    <string name="term5">5. In case clothes are lost half value will be paid after a months period </string>
+    <string name="term6">6. Saree cleaning at owner risk</string>
+    <string name="term7">7. Subject to Mumbai Jurisdiction</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address">Shop no 7, Amar kunj 14th Siddhanand Road Opp Syndicate Bank Vile parle (East),Mumbai 400057</string>
+    <string name="service1">We are assure you best services of products and excellent technical support for any of your needs and optimum satisfactory services.</string>
+    <string name="vision">our vision and focus to provide customized solutions with quality and cost effective product range. A strong customer focus approach and constant quest for top class quality and services have enabled us to attain and sustain leadership position.</string>
+
+    <string name="easy_payment">We ensure that you always have more to choose from Lux Laundry provide cash,cheque facillities.you can pay money for your services by cheque</string>
+    <string name="convenience">We hire only the most qualified professionals to ensure high quality services, such that your satisfaction levels are always at a 100%. </string>
+    <string name="privacy_policy">we view protectionof your privacy as a very important principle.We understand clearly that you and your personal information is one of our most important asset.Please review how we use and store your personal information here</string>
+
+    <string name="q1">Q. Do I need to separate clothes of laundry from dry clean? </string>
+    <string name="q1ans">Ans: Our pick up riders have reusable laundry bags and you just need to tell our rider suitably about the segregation and our pick up rider will putyour clothes in different bags </string>
+    <string name="q2_pickup">Q. How to schedule my first pick-up?</string>
+    <string name="q2_pickup_ans">Ans: Scheduling your pick-up is merely a few click away on our App.You can also call on 9811121211 to schedule a pick-up.you can download the Lux-Laundry android app from play store </string>
+
+    <string name="q1_washing">Q. Are there things that you will not wash?</string>
+    <string name="q1_wash_ans">Ans: NOT Much ! if our laundry specialist discover that it would not be sensible to wash a certain textile we will contact you and agree on how to continue. </string>
+    <string name="q2_washing">Q. What is order size?</string>
+    <string name="q2_wash_ans">Ans: Our minimum order value is Rs.200</string>
+
+    <string name="q1_payment">Q. Do I need to tip the Delivery Rider?</string>
+    <string name="q1_payment_ans">Ans: No need to search your pockets for that extra bit, We motivate our boys with ample incentives!</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+
+</resources>

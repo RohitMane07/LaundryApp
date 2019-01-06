@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/washing_machine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:background="@drawable/textview_border">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:id="@+id/mobile"
+            android:drawableLeft="@mipmap/phone"
+            android:hint="Mobile Number"
+            android:textColor="#78909C"
+            android:textSize="14dp"
+            android:paddingLeft="0dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="#999"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/username"
+            android:drawableLeft="@mipmap/user_icon"
+            android:hint="User Name"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:textColor="#78909C"
+            android:paddingLeft="0dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="#999"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/flat"
+            android:drawableLeft="@mipmap/address"
+            android:hint="Address"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:textColor="#78909C"
+            android:paddingLeft="0dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="#999"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/landmark"
+            android:hint="landmark"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#78909C"
+            android:textSize="14dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="#999"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/pincode"
+            android:hint="Pincode"
+            android:paddingLeft="5dp"
+            android:maxLength="6"
+            android:layout_marginLeft="40dp"
+            android:textColor="#78909C"
+            android:textSize="14dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="#999"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/email"
+            android:drawableLeft="@mipmap/email"
+            android:hint="Email"
+            android:textColor="#78909C"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:drawablePadding="10dp"
+            android:textColorHint="#999"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:background="#074e72"
+            android:textColor="#fff"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+</LinearLayout>

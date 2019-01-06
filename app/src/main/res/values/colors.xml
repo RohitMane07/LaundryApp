@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f05f57</color>
+    <color name="colorPrimaryDark">#E53935</color>
+    <color name="colorAccent">#4DB6AC</color>
+    <color name="select_wash">#4DB6AC</color>
+    <color name="select_iron">#7CB342</color>
+    <color name="select_dry">#EF5350</color>
+    <color name="select_premium">#EC407A</color>
+    <color name="select_color">#FF9800</color>
+    <color name="select_misc">#9575CD</color>
+    <color name="White">#fff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+    <color name="sr_main_text">#232323</color>
+
+    <color name="sr_color_primary">#1863DC</color>
+    <color name="sr_color_primary_dark">#1451b4</color>
+    <color name="sr_color_accent">#ffffff</color>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4">
+   <ImageView
+       android:id="@+id/backward"
+       android:layout_width="0dp"
+       android:layout_height="20dp"
+       android:src="@mipmap/backward"
+       android:layout_gravity="center_vertical"
+       android:layout_weight="0.3"
+       />
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/circle"
+       android:layout_width="0dp"
+       android:layout_height="75dp"
+       android:layout_gravity="center_vertical"
+       android:layout_weight="1"/>
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       android:layout_weight="2.4">
+      <TextView
+          android:id="@+id/username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="Rohit Mane"
+          />
+
+   <TextView
+       android:id="@+id/textview"
+       android:layout_marginTop="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_vertical"
+       android:text="dd"/>
+   </LinearLayout>
+   <ImageView
+       android:id="@+id/forward"
+       android:layout_width="0dp"
+       android:layout_height="20dp"
+       android:src="@mipmap/forward"
+       android:layout_gravity="center_vertical"
+       android:layout_weight="0.3"
+       />
+</LinearLayout>

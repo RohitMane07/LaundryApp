@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order No :"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#263238"/>
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Order No"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#263238"/>
+    </LinearLayout>
+    <Spinner
+       android:id="@+id/date"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="10dp"
+       android:textSize="14dp"
+       android:visibility="visible"
+       android:background="@drawable/textview_border"/>
+
+   <TextView
+       android:id="@+id/err_date"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Please select date"
+       android:layout_marginTop="5dp"
+       android:gravity="right"
+       android:visibility="gone"
+       android:layout_marginRight="10dp"
+       android:textColor="#E53935"/>
+   <Spinner
+       android:id="@+id/timeslot"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_marginTop="10dp"
+       android:textSize="14dp"
+       android:visibility="visible"
+       android:background="@drawable/textview_border"/>
+   <TextView
+       android:id="@+id/err_timeslot"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Please select timeslot"
+       android:layout_marginTop="5dp"
+       android:gravity="right"
+       android:layout_marginRight="10dp"
+       android:visibility="gone"
+       android:textColor="#E53935"/>
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#263238"
+            android:textColor="#fff"
+            android:text="Cancel"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnreschedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:text="Reschedule"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
