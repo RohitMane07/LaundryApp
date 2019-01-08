@@ -13,9 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.LoginActivity">
-
-        </activity>
+        <activity android:name=".activity.LoginActivity"></activity>
         <activity android:name=".activity.RegisterActivity" />
         <activity
             android:name=".activity.HomeActivity"
@@ -34,7 +32,8 @@
         <activity
             android:name=".activity.FAQActivity"
             android:label="FAQ&apos;s" />
-        <activity android:name=".activity.SplashScreenActivity"
+        <activity
+            android:name=".activity.SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SrAppTheme">
             <intent-filter>
@@ -43,6 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.PickupTimeslot"></activity>
     </application>
 
 </manifest>

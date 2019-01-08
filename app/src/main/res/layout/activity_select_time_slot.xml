@@ -1,9 +1,381 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity.SelectTimeSlot">
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#f2f2f2"
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+        <FrameLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:translationZ="2dp"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:focusable="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="352dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+
+                    android:maxLines="2"
+                    android:text="Pick Up Address"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <FrameLayout
+                    android:id="@+id/avatar_border"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/gv_avatar_border_header"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_margin="1dp"
+                        android:src="@mipmap/sign_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/avatar_border"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/avatar_border"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avatar_border"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="17sp"
+                        android:text="Address"
+                        android:textColor="@color/gv_details_item_text" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+
+                        android:textSize="14sp"
+                        android:text="Some address mention here"
+                        android:textColor="@color/gv_details_item_text" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:background="@color/gv_item_separator_color"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/avatar_border"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_connect" />
+
+                <TextView
+                    android:id="@+id/tv_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Address"
+                    android:textStyle="bold"
+                    android:textColor="@color/gv_header_green"
+                    android:textSize="13sp"
+
+                    android:layout_marginLeft="0dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/avatar_border"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="13dp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/view2"-->
+                <!--android:layout_width="@dimen/gv_item_icon_size"-->
+                <!--android:layout_height="@dimen/gv_item_icon_size"-->
+                <!--android:src="@drawable/gv_ic_comment"-->
+                <!--android:layout_marginRight="0dp"-->
+                <!--app:layout_constraintRight_toRightOf="@+id/line"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/imageView"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/imageView"-->
+                <!--android:layout_marginBottom="0dp" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="@dimen/gv_item_icon_size"-->
+                <!--android:layout_height="@dimen/gv_item_icon_size"-->
+                <!--android:src="@drawable/gv_ic_like"-->
+                <!--android:id="@+id/imageView"-->
+                <!--app:layout_constraintRight_toLeftOf="@+id/view2"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--android:layout_marginBottom="16dp" />-->
+
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:translationZ="2dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_header1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/black"
+                    android:text="Pick Up Time Slot"
+                    android:textSize="18sp"
+                    android:maxLines="2"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:id="@+id/avatar_border1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/gv_avatar_border_header"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="16dp">
+
+                        <ImageView
+                            android:id="@+id/avatar1"
+                            android:layout_margin="1dp"
+                            android:src="@mipmap/alarm_clock"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginRight="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textSize="17sp"
+                            android:text="Time selected"
+                            android:textColor="@color/gv_details_item_text" />
+
+                        <TextView
+                            android:id="@+id/tv_address1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+
+                            android:textSize="14sp"
+                            android:text="Some address mention here"
+                            android:textColor="@color/gv_details_item_text" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/view2"-->
+                <!--android:layout_width="@dimen/gv_item_icon_size"-->
+                <!--android:layout_height="@dimen/gv_item_icon_size"-->
+                <!--android:src="@drawable/gv_ic_comment"-->
+                <!--android:layout_marginRight="0dp"-->
+                <!--app:layout_constraintRight_toRightOf="@+id/line"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/imageView"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="@+id/imageView"-->
+                <!--android:layout_marginBottom="0dp" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="@dimen/gv_item_icon_size"-->
+                <!--android:layout_height="@dimen/gv_item_icon_size"-->
+                <!--android:src="@drawable/gv_ic_like"-->
+                <!--android:id="@+id/imageView"-->
+                <!--app:layout_constraintRight_toLeftOf="@+id/view2"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--android:layout_marginBottom="16dp" />-->
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cloth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+
+            android:translationZ="2dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#ffffff">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_header2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start"
+                    android:ellipsize="end"
+
+                    android:textColor="@android:color/black"
+                    android:text="Select cloth"
+                    android:textSize="18sp"
+                    android:maxLines="2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/avatar_border2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/avatar_border2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/gv_avatar_border_header"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/avatar2"
+                        android:layout_margin="1dp"
+                        android:src="@mipmap/sign_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@+id/avatar_border2"
+                    android:layout_marginLeft="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/avatar_border2"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/avatar_border2"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/tv_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+
+                        android:textSize="17sp"
+                        android:text="Address"
+                        android:textColor="@color/gv_details_item_text" />
+
+                    <TextView
+                        android:id="@+id/tv_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+
+                        android:textSize="14sp"
+                        android:text="Some address mention here"
+                        android:textColor="@color/gv_details_item_text" />
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
